@@ -47,9 +47,9 @@ public class Problema01 {
            System.out.println("Ingrese la edad del jugador");
            edad = entrada.nextInt();
            
-           sumaEdades = String.format("%s%d", sumaEdades,edad);
+           sumaEdades = String.format("%s%d ", sumaEdades,edad);
            
-           mensajeFinal = String.format("%s%d.%s-%s-,edad %d, estatura %.2f\\n",
+           mensajeFinal = String.format("%s%d.%s-%s-,edad %d, estatura %.2f\n",
                    mensajeFinal, i, nombre, posicion, edad,
                    estatura);
            
@@ -60,7 +60,7 @@ public class Problema01 {
            promedioEstaturas = estaturas / i;
        }
        
-       System.out.printf("Listado de Jugadores%s\nListado de Edades: %s\n"
+       System.out.printf("Listado de Jugadores\n%s\n Listado de Edades:%s\n"
                + "Promedio de Edades: %.1f\nPromedio de Estaturas: %.2f\n"
                ,mensajeFinal,
                sumaEdades,

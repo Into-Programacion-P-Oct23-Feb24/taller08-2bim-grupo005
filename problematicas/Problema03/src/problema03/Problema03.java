@@ -17,10 +17,12 @@ public class Problema03 {
         // TODO code application logic here
        double celsius;
         String cadena = "";
-        for (int farenheit = 20; farenheit <= 96; farenheit += 4) {
-            celsius = (double) (farenheit - 32) * 5 / 9;
+        int f = 20;
+        for (int farenheit = 1; farenheit <= 20; farenheit ++) {
+            celsius = (double) (f - 32) * 5 / 9;
             cadena= String.format("%s%d Farenheit son: %.2f Celsius\n",
-                    cadena, farenheit, celsius);
+                    cadena, f, celsius);
+            f = f + 4;
         }
         System.out.printf("%s", cadena);
         
